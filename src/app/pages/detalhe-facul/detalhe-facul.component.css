@@ -1,0 +1,68 @@
+.image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 120px;
+}
+
+.flex{
+    display: flex;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.branco{
+    background-color: #FFFFFF;
+}
+
+.fa-graduation-cap{
+    color: #007bff !important;
+}
+
+.separador-direita{
+    border-right: solid 1px #007bff;
+}
+
+.separador-esquerda{
+    border-left: solid 1px #007bff;
+}
+
+.separador-superior{
+    border-top: solid 1px #007bff;
+}
+
+.separador-inferior{
+    border-bottom: solid 1px #007bff;
+}
+
+.fa-user-circle{
+    color: #007bff !important;
+}
+
+.fa-user-graduate{
+    color: #007bff !important;
+}
+
+.fa-comment{
+    color: #007bff !important;
+}
+
+.fa-star{
+    color: #007bff !important;
+}
+
+@media (max-width: 767px) 
+{
+  h2.text-right{
+      text-align: center !important;
+  }
+  h2{
+      font-size: 1.5rem;
+  }
+  h3{
+      font-size: 1.1rem;
+  }
+  .avaliacao{
+      text-align: center !important;
+  }
+}

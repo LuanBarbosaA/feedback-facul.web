@@ -1,20 +1,31 @@
+import { FormsModule } from '@angular/forms';
+import { ComponentsModule } from './components/components.module';
 import { PagesRoutingModule } from './pages/pages.routing.module';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from './pages/login/login.component';
+import { PagesModule } from './pages/pages.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { httpInterceptorProviders } from './shared/index-interceptor';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
   ],
   imports: [
     BrowserModule,
-    PagesRoutingModule
+    FormsModule,
+    PagesModule,
+    PagesRoutingModule,
+    BrowserAnimationsModule,
+    ComponentsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [httpInterceptorProviders],
+  schemas: [ NO_ERRORS_SCHEMA ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

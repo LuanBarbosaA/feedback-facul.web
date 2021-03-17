@@ -1,0 +1,111 @@
+<div class="bg1">
+  <div class="bg2">
+
+<app-navbar></app-navbar>
+
+<div class="shadow container">
+    <div class="row">
+        <div class="col d-none d-md-block">
+            <table style="text-align:center;" class="table">
+                <thead class="shadow">
+                    <tr>
+                        <th id="media" scope="col">Avaliação geral média</th>
+                        <th id="nome" scope="col">Nome</th>
+                        <th id="professores" scope="col" *ngFor="let quesito of quesitos">{{quesito.nome}}</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let item of instiuicoes; let i = index">
+                    <tr class="hover-link" (click)="detalheInstituicao(item.id)">
+                        <td><span class="badge badge-pill badge-danger">Ruim</span></td>
+                        <td>{{ item.nome }}</td>
+                        <td *ngFor="let avaliacao of retornaAvaliacao(i)">{{avaliacao.media}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col d-block d-md-none">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Avaliação média</th>
+                        <th scope="col">Nome</th>
+                    </tr>
+                    <tr routerLink="/detalhe-faculdade" routerLinkActive="active" class="hover-link">
+                        <td><label>2</label><span class="badge badge-pill badge-danger">Ruim</span></td>
+                        <td>Centro Universitário Una</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+    </div>
+    <!-- <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div>
+                    Filtro aqui
+                </div>
+            </div>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action active">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Centro universitário UNA - Barreiro</h5>
+                    <app-estrelas></app-estrelas>
+                  </div>
+                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                  <small>Donec id elit non mi porta.</small>
+                </a>
+                <a class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Universidade PUC Minas - Barreiro</h5>
+                    <app-estrelas></app-estrelas>
+                  </div>
+                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                  <small class="text-muted">Donec id elit non mi porta.</small>
+                </a>
+                <a class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">List group item heading</h5>
+                    <app-estrelas></app-estrelas>
+                  </div>
+                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                  <small class="text-muted">Donec id elit non mi porta.</small>
+                </a>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action active">
+                    <div >
+                        <img class="instituicao-picture" src="../../../assets/img/logo-una.png">
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Centro universitário UNA - Barreiro</h5>
+                        <app-estrelas></app-estrelas>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    <small>Donec id elit non mi porta.</small>
+                </a>
+                <a class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Universidade PUC Minas - Barreiro</h5>
+                        <app-estrelas></app-estrelas>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    <small class="text-muted">Donec id elit non mi porta.</small>
+                </a>
+                <a class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <app-estrelas></app-estrelas>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    <small class="text-muted">Donec id elit non mi porta.</small>
+                </a>
+            </div>
+        </div>
+    </div> -->
+</div>
+</div>
+</div>

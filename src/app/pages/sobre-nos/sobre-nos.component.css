@@ -1,0 +1,43 @@
+.bg1 {
+  background-image: linear-gradient(to bottom, #00ff00, #88fe58, #bbfc8b, #defabd, #f6f8f2);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg2 {
+  background-image: url(../../../assets/img/home/teste4.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.espaco {
+    padding-bottom: 30pt;
+}
+
+.container {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.card-text {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.card-title:nth-child(5) {
+    font-size: 20pt;
+    padding: 20pt;
+}
+
+.titulocartao {
+    font-size: 20pt;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
